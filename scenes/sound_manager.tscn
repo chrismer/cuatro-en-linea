@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://b61em52ni8tuf"]
+
+[ext_resource type="Script" uid="uid://b0jc8ipxhateb" path="res://scenes/SoundManager.gd" id="1_5lwbd"]
+[ext_resource type="AudioStream" uid="uid://ck1shktaor16w" path="res://assets/apple_cider.wav" id="1_gbdfy"]
+[ext_resource type="AudioStream" uid="uid://0k6f0e4js6dt" path="res://assets/Cloud Click.wav" id="3_ro3ww"]
+[ext_resource type="AudioStream" uid="uid://gadgm3w7jdo7" path="res://assets/WinFantasia.wav" id="4_v1pt3"]
+
+[node name="SoundManager" type="Node2D"]
+script = ExtResource("1_5lwbd")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_gbdfy")
+autoplay = true
+
+[node name="FichaSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ro3ww")
+
+[node name="WinSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_v1pt3")

@@ -1,0 +1,221 @@
+[gd_scene load_steps=6 format=3 uid="uid://br312lf5n8ypa"]
+
+[ext_resource type="Script" uid="uid://cx3ph7qbxs3g1" path="res://scenes/juego.gd" id="1_2ka1k"]
+[ext_resource type="Texture2D" uid="uid://bi8pqkv6t0ic3" path="res://assets/marco-flags.png" id="2_2ka1k"]
+[ext_resource type="Texture2D" uid="uid://1o1n2bmb8nqm" path="res://assets/tablero4.png" id="3_2ka1k"]
+[ext_resource type="Texture2D" uid="uid://b8klrm6dm6dv6" path="res://assets/bg-beach-flags.png" id="4_pew7j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1"]
+bg_color = Color(0.2, 0.2, 0.2, 0.9)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4, 0.4, 0.4, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_size = 4
+shadow_offset = Vector2(2, 2)
+
+[node name="Juego" type="Node2D"]
+script = ExtResource("1_2ka1k")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(526, 409)
+scale = Vector2(0.88, 0.653061)
+
+[node name="ContenedorFichas" type="Node2D" parent="."]
+
+[node name="Tablero" type="Sprite2D" parent="."]
+position = Vector2(571.913, 408)
+scale = Vector2(0.757587, 0.689465)
+texture = ExtResource("3_2ka1k")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="InfoLabel" type="Label" parent="UI"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_1")
+text = "Turno del Jugador Amarillo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotonReiniciar" type="Button" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 60.0
+text = "Reiniciar"
+
+[node name="BotonMenu" type="Button" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_top = 70.0
+offset_right = -20.0
+offset_bottom = 110.0
+text = "Menú"
+
+[node name="PosicionesFichas" type="Node2D" parent="."]
+
+[node name="Pos_0_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(379, 572)
+
+[node name="Pos_0_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(379, 506)
+
+[node name="Pos_0_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(379, 440)
+
+[node name="Pos_0_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(379, 374)
+
+[node name="Pos_0_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(380, 309)
+
+[node name="Pos_0_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(379, 243)
+
+[node name="Pos_1_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(443, 572)
+
+[node name="Pos_1_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(443, 506)
+
+[node name="Pos_1_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(443, 441)
+
+[node name="Pos_1_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(443, 374)
+
+[node name="Pos_1_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(443, 310)
+
+[node name="Pos_1_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(443, 243)
+
+[node name="Pos_2_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(508, 573)
+
+[node name="Pos_2_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(508, 506)
+
+[node name="Pos_2_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(508, 441)
+
+[node name="Pos_2_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(508, 374)
+
+[node name="Pos_2_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(508, 309)
+
+[node name="Pos_2_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(508, 243)
+
+[node name="Pos_3_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(571, 573)
+
+[node name="Pos_3_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(572, 505)
+
+[node name="Pos_3_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(571, 441)
+
+[node name="Pos_3_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(571, 374)
+
+[node name="Pos_3_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(572, 309)
+
+[node name="Pos_3_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(571, 243)
+
+[node name="Pos_4_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(636, 572)
+
+[node name="Pos_4_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(636, 506)
+
+[node name="Pos_4_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(635, 441)
+
+[node name="Pos_4_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(635, 375)
+
+[node name="Pos_4_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(635, 309)
+
+[node name="Pos_4_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(635, 243)
+
+[node name="Pos_5_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(700, 573)
+
+[node name="Pos_5_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(700, 508)
+
+[node name="Pos_5_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(699, 441)
+
+[node name="Pos_5_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(700, 375)
+
+[node name="Pos_5_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(699, 309)
+
+[node name="Pos_5_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(699, 244)
+
+[node name="Pos_6_0" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(764, 573)
+
+[node name="Pos_6_1" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(762, 507)
+
+[node name="Pos_6_2" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(764, 440)
+
+[node name="Pos_6_3" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(764, 374)
+
+[node name="Pos_6_4" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(764, 309)
+
+[node name="Pos_6_5" type="Marker2D" parent="PosicionesFichas"]
+position = Vector2(763, 243)
+
+[node name="Marco-flags" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(739, 471)
+texture = ExtResource("2_2ka1k")
+
+[node name="World-map" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(563, 532)
+scale = Vector2(1.91946, 1.68421)
+
+[node name="Bg-beach-flags" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(589, 324.5)
+scale = Vector2(0.763021, 0.62793)
+texture = ExtResource("4_pew7j")
+
+[node name="Panel" type="ColorRect" parent="Bg-beach-flags"]
+offset_left = -318.758
+offset_top = -185.704
+offset_right = 276.242
+offset_bottom = 457.296
+color = Color(0.360784, 0.309804, 1, 1)
+
+[connection signal="pressed" from="UI/BotonMenu" to="." method="_on_boton_menu_pressed"]

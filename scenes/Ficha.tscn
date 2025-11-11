@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx6xmoj0l00p5"]
+
+[ext_resource type="Script" uid="uid://bxtpyd6rdwb4u" path="res://scenes/ficha.gd" id="1_wtb6k"]
+
+[sub_resource type="GDScript" id="GDScript_pxnyk"]
+script/source = "extends Sprite2D
+"
+
+[node name="Ficha" type="Node2D"]
+script = ExtResource("1_wtb6k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+script = SubResource("GDScript_pxnyk")

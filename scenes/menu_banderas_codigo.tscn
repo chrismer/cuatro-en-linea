@@ -1,0 +1,122 @@
+[gd_scene load_steps=2 format=3 uid="uid://ye0t487j7bq5"]
+
+[ext_resource type="Texture2D" uid="uid://b8klrm6dm6dv6" path="res://assets/bg-beach-flags.png" id="1_b2d6q"]
+
+[node name="MenuBanderasCodigo" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+metadata/_edit_horizontal_guides_ = [262.0, 312.0, 429.0]
+
+[node name="Fondo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 652.0
+texture = ExtResource("1_b2d6q")
+expand_mode = 1
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 142.0
+offset_right = 812.0
+offset_bottom = 211.0
+theme_override_font_sizes/font_size = 50
+text = "Selecciona tu bandera"
+
+[node name="Panel" type="Panel" parent="Titulo"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -4.0
+offset_top = 12.0
+offset_right = 537.0
+offset_bottom = 59.0
+
+[node name="Jugador1Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 214.0
+offset_right = 328.0
+offset_bottom = 269.0
+theme_override_font_sizes/font_size = 40
+text = "Jugador 1"
+
+[node name="Jugador2Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 703.0
+offset_top = 221.0
+offset_right = 885.0
+offset_bottom = 276.0
+theme_override_font_sizes/font_size = 40
+text = "Jugador 2"
+
+[node name="DropdownJugador1" type="OptionButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 128.0
+offset_top = 285.0
+offset_right = 350.0
+offset_bottom = 313.0
+
+[node name="DropdownJugador2" type="OptionButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 687.0
+offset_top = 288.0
+offset_right = 907.0
+offset_bottom = 312.0
+
+[node name="SeleccionJugador1" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 170.0
+offset_top = 334.0
+offset_right = 295.0
+offset_bottom = 459.0
+
+[node name="SeleccionJugador2" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 734.0
+offset_top = 332.0
+offset_right = 859.0
+offset_bottom = 457.0
+
+[node name="TextoSeleccion1" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 134.0
+offset_top = 281.0
+offset_right = 337.0
+offset_bottom = 323.0
+theme_override_font_sizes/font_size = 25
+text = "Seleccionar país"
+
+[node name="TextoSeleccion2" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 692.0
+offset_top = 282.0
+offset_right = 886.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 25
+text = "Seleccionar país"
+
+[node name="BotonJugar" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 599.0
+offset_top = 582.0
+offset_right = 682.0
+offset_bottom = 632.0
+theme_override_font_sizes/font_size = 30
+text = "Jugar"
+
+[node name="BotonSalir" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 379.0
+offset_top = 580.0
+offset_right = 451.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 30
+text = "Salir"
