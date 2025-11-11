@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://by5fodum6sfwx"]
+[gd_scene load_steps=10 format=3 uid="uid://c6wjlq8d88dhp"]
 
-[ext_resource type="Script" uid="uid://bhstyvayl1qhf" path="res://scenes/menu_banderas.gd" id="2_0"]
-[ext_resource type="Texture2D" uid="uid://c20bgepqyvpbe" path="res://assets/portada.png" id="2_taf27"]
+[ext_resource type="Script" path="res://scenes/menu_banderas.gd" id="1_jg1fl"]
+[ext_resource type="Texture2D" uid="uid://bpdumf61j2k5n" path="res://assets/fondoMenu.png" id="2_dihs0"]
+[ext_resource type="Texture2D" uid="uid://dsd8v0g8fwvov" path="res://assets/argentina_flags_flag_16969.png" id="3_7g6v1"]
+[ext_resource type="Texture2D" uid="uid://ci1vqy25732j" path="res://assets/japan_flags_flag_17019.png" id="4_v72j5"]
+[ext_resource type="Texture2D" uid="uid://du8a2s08j82qo" path="res://assets/russia_flags_flag_17058.png" id="5_p2hvf"]
+[ext_resource type="Texture2D" uid="uid://b5s440gy55wxt" path="res://assets/brazil_flags_flag_16979.png" id="6_p3iun"]
+[ext_resource type="Texture2D" uid="uid://c6a858k25l78u" path="res://assets/germany_flags_flag_17001.png" id="7_csuqq"]
+[ext_resource type="Texture2D" uid="uid://djgwl8j5bs5j8" path="res://assets/italy_flags_flag_17018.png" id="8_5l5yq"]
+[ext_resource type="Texture2D" uid="uid://c65j7k274wooj" path="res://assets/spain_flags_flag_17068.png" id="9_v31g1"]
 
 [node name="MenuBanderas" type="Control"]
 layout_mode = 3
@@ -10,7 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("2_0")
+script = ExtResource("1_jg1fl")
 
 [node name="Fondo" type="TextureRect" parent="."]
 layout_mode = 1
@@ -19,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_taf27")
+texture = ExtResource("2_dihs0")
 expand_mode = 1
 
 [node name="Titulo" type="Label" parent="."]
@@ -27,66 +34,280 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -300.0
-offset_top = 220.0
-offset_right = -50.0
-offset_bottom = 420.0
+offset_left = -250.0
+offset_top = 40.0
+offset_right = 250.0
+offset_bottom = 85.0
 grow_horizontal = 2
-text = "JUGADOR 2"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 36
+text = "SELECCIONA TU BANDERA"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Jugador1Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -174.0
+offset_right = -125.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "JUGADOR 1"
+horizontal_alignment = 1
+
+[node name="Jugador2Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 125.0
+offset_top = -174.0
+offset_right = 375.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "JUGADOR 2"
+horizontal_alignment = 1
+
+[node name="BanderasJugador1" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -100.0
+offset_right = -125.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 3
+
+[node name="Bandera1" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("3_7g6v1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera2" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("4_v72j5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera3" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("5_p2hvf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera4" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("6_p3iun")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera5" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("7_csuqq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera6" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("8_5l5yq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera7" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("9_v31g1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera8" type="TextureButton" parent="BanderasJugador1"]
+layout_mode = 2
+texture_normal = ExtResource("9_v31g1")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="BanderasJugador2" type="GridContainer" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = 50.0
-offset_top = 220.0
-offset_right = 300.0
-offset_bottom = 420.0
+anchor_bottom = 0.5
+offset_left = 125.0
+offset_top = -100.0
+offset_right = 375.0
+offset_bottom = 100.0
 grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
 columns = 3
 
-[node name="MenuButton" type="MenuButton" parent="BanderasJugador2"]
+[node name="Bandera1" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-item_count = 1
-popup/item_0/id = 0
+texture_normal = ExtResource("3_7g6v1")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="BotonJugar" type="Button" parent="."]
+[node name="Bandera2" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("4_v72j5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera3" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("5_p2hvf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera4" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("6_p3iun")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera5" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("7_csuqq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera6" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("8_5l5yq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera7" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("9_v31g1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bandera8" type="TextureButton" parent="BanderasJugador2"]
+layout_mode = 2
+texture_normal = ExtResource("9_v31g1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SeleccionJugador1" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -300.0
-offset_top = 450.0
-offset_right = -50.0
-offset_bottom = 550.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = 120.0
+offset_right = -125.0
+offset_bottom = 220.0
 grow_horizontal = 2
-text = "SALIR"
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
 
 [node name="SeleccionJugador2" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = 50.0
-offset_top = 450.0
-offset_right = 300.0
-offset_bottom = 550.0
+anchor_bottom = 0.5
+offset_left = 125.0
+offset_top = 120.0
+offset_right = 375.0
+offset_bottom = 220.0
 grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 1
+stretch_mode = 5
 
 [node name="TextoSeleccion1" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -94.0
-offset_top = 565.0
-offset_right = 156.0
-offset_bottom = 595.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = 230.0
+offset_right = -125.0
+offset_bottom = 256.0
 grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
 text = "Selecciona una bandera"
 horizontal_alignment = 1
-vertical_alignment = 1
+
+[node name="TextoSeleccion2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 125.0
+offset_top = 230.0
+offset_right = 375.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Selecciona una bandera"
+horizontal_alignment = 1
+
+[node name="BotonJugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+disabled = true
+text = "¡JUGAR!"
+
+[node name="BotonSalir" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 18
+text = "SALIR"
