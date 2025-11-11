@@ -5,7 +5,7 @@ extends Control
 @onready var nombre_j2_input = $NombreJ2_Input
 @onready var continuar_button = $ContinuarButton
 @onready var ranking_grid = $PanelContainer/VBoxContainer/ScrollContainer/RankingGrid
-var menuSimple = preload("res://scenes/menu_simple.tscn")
+var menuBanderas = preload("res://scenes/menu_banderas.tscn")
 
 func _ready():
 	# Conectamos la señal del botón a nuestra función
@@ -71,9 +71,6 @@ func _on_continuar_pressed():
 		
 	# Guardamos los nombres en nuestro singleton GameData
 	GameData.set_nombres(nombre1, nombre2)
-	#DatabaseManager.agregar_jugador(nombre1)
-	#DatabaseManager.agregar_jugador(nombre2)
 	
 	# Cambiamos a la escena de selección de banderas
-	#get_tree().change_scene_to_file("res://scenes/menu_simple.tscn")
-	get_tree().change_scene_to_packed(menuSimple)
+	get_tree().change_scene_to_packed(menuBanderas)
