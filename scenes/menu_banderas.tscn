@@ -1,14 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://c6wjlq8d88dhp"]
+[gd_scene load_steps=12 format=3 uid="uid://c6wjlq8d88dhp"]
 
 [ext_resource type="Script" path="res://scenes/menu_banderas.gd" id="1_jg1fl"]
 [ext_resource type="Texture2D" uid="uid://bpdumf61j2k5n" path="res://assets/fondoMenu.png" id="2_dihs0"]
-[ext_resource type="Texture2D" uid="uid://dsd8v0g8fwvov" path="res://assets/argentina_flags_flag_16969.png" id="3_7g6v1"]
-[ext_resource type="Texture2D" uid="uid://ci1vqy25732j" path="res://assets/japan_flags_flag_17019.png" id="4_v72j5"]
-[ext_resource type="Texture2D" uid="uid://du8a2s08j82qo" path="res://assets/russia_flags_flag_17058.png" id="5_p2hvf"]
-[ext_resource type="Texture2D" uid="uid://b5s440gy55wxt" path="res://assets/brazil_flags_flag_16979.png" id="6_p3iun"]
-[ext_resource type="Texture2D" uid="uid://c6a858k25l78u" path="res://assets/germany_flags_flag_17001.png" id="7_csuqq"]
-[ext_resource type="Texture2D" uid="uid://djgwl8j5bs5j8" path="res://assets/italy_flags_flag_17018.png" id="8_5l5yq"]
-[ext_resource type="Texture2D" uid="uid://c65j7k274wooj" path="res://assets/spain_flags_flag_17068.png" id="9_v31g1"]
+[ext_resource type="Texture2D" path="res://assets/Argentina.png" id="3_arg"]
+[ext_resource type="Texture2D" path="res://assets/Alemania.png" id="4_ger"]
+[ext_resource type="Texture2D" path="res://assets/Italia.png" id="5_ita"]
+[ext_resource type="Texture2D" path="res://assets/España.png" id="6_spa"]
+[ext_resource type="Texture2D" path="res://assets/EEUU.png" id="7_usa"]
+[ext_resource type="Texture2D" path="res://assets/Reino Unido.png" id="8_uk"]
+[ext_resource type="Texture2D" path="res://assets/Canada.png" id="9_can"]
+[ext_resource type="Texture2D" path="res://assets/Chile.png" id="10_chi"]
 
 [node name="MenuBanderas" type="Control"]
 layout_mode = 3
@@ -100,49 +101,49 @@ columns = 3
 
 [node name="Bandera1" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("3_7g6v1")
+texture_normal = ExtResource("3_arg")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera2" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("4_v72j5")
+texture_normal = ExtResource("4_ger")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera3" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("5_p2hvf")
+texture_normal = ExtResource("5_ita")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera4" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("6_p3iun")
+texture_normal = ExtResource("6_spa")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera5" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("7_csuqq")
+texture_normal = ExtResource("7_usa")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera6" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("8_5l5yq")
+texture_normal = ExtResource("8_uk")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera7" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("9_v31g1")
+texture_normal = ExtResource("9_can")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera8" type="TextureButton" parent="BanderasJugador1"]
 layout_mode = 2
-texture_normal = ExtResource("9_v31g1")
+texture_normal = ExtResource("10_chi")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -165,49 +166,49 @@ columns = 3
 
 [node name="Bandera1" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("3_7g6v1")
+texture_normal = ExtResource("3_arg")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera2" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("4_v72j5")
+texture_normal = ExtResource("4_ger")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera3" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("5_p2hvf")
+texture_normal = ExtResource("5_ita")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera4" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("6_p3iun")
+texture_normal = ExtResource("6_spa")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera5" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("7_csuqq")
+texture_normal = ExtResource("7_usa")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera6" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("8_5l5yq")
+texture_normal = ExtResource("8_uk")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera7" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("9_v31g1")
+texture_normal = ExtResource("9_can")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Bandera8" type="TextureButton" parent="BanderasJugador2"]
 layout_mode = 2
-texture_normal = ExtResource("9_v31g1")
+texture_normal = ExtResource("10_chi")
 ignore_texture_size = true
 stretch_mode = 0
 
