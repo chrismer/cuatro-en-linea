@@ -377,7 +377,6 @@ func mostrar_mensaje_ganador(jugador_numero):
 	var bandera_ganadora_archivo = banderas[jugador_numero - 1]
 	
 	# NUEVO: Llamamos a la función para registrar la victoria en la base de datos.
-	#DatabaseManager.registrar_victoria(nombre_ganador, bandera_ganadora_archivo)
 	RankingManager.register_victory(nombre_ganador, bandera_ganadora_archivo)
 	
 	#var nombre_pais_ganador = bandera_ganadora_archivo.replace(".png", "")

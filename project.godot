@@ -27,7 +27,6 @@ movie_writer/movie_file="/Users/christianmereles/Documents/Godot/4enlinea/Traile
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-sqlite/plugin.cfg")
 
 [rendering]
 

@@ -71,8 +71,6 @@ func _on_continuar_pressed():
 		
 	# Guardamos los nombres en nuestro singleton GameData
 	GameData.set_nombres(nombre1, nombre2)
-	#DatabaseManager.agregar_jugador(nombre1)
-	#DatabaseManager.agregar_jugador(nombre2)
 	
 	# Cambiamos a la escena de selección de banderas
 	#get_tree().change_scene_to_file("res://scenes/menu_simple.tscn")
